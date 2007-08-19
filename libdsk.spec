@@ -1,12 +1,12 @@
 %define name    libdsk
-%define version 1.1.12
+%define version 1.1.14
 %define release %mkrel 1
 
 %define major 3
 
 %define libname %mklibname dsk %major
-%define libname_devel %mklibname -d dsk %major
-%define libname_static_devel %mklibname -s -d dsk %major
+%define libname_devel %mklibname -d dsk
+%define libname_static_devel %mklibname -s -d dsk
 
 Name: %{name}
 Summary: A library for accessing floppy drives and disk images transparently
@@ -16,7 +16,7 @@ License: GPL
 URL: http://www.seasip.demon.co.uk/Unix/LibDsk/
 Source: http://www.seasip.demon.co.uk/Unix/LibDsk/%{name}-%{version}.tar.bz2
 Group: System/Libraries
-BuildRequires: libz-devel libbzip2-devel
+BuildRequires: libz-devel bzip2-devel
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
 
 %description
@@ -41,6 +41,7 @@ Group: Development/C
 Requires: %{libname} = %{version}-%{release}
 Provides: %{name}-devel = %{version}-%{release}
 Provides: lib%{name}-devel = %{version}-%{release}
+Obsoletes: %{libname}-devel
 
 %description -n %{libname_devel}
 This package contains the header files and documentation necessary for
@@ -57,6 +58,7 @@ Group: Development/C
 Requires: %{libname} = %{version}-%{release}
 Provides: %{name}-static-devel = %{version}-%{release}
 Provides: lib%{name}-static-devel = %{version}-%{release}
+Obsoletes: %{libname}-static-devel
 
 %description -n %{libname_static_devel}
 This package contains the static libraries, necessary for development of
@@ -118,5 +120,3 @@ rm -rf %{buildroot}
 %{_bindir}/*
 %{_mandir}/man1/*
 %{_mandir}/man5/*
-
-
