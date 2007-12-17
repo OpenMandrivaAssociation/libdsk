@@ -17,7 +17,6 @@ URL: http://www.seasip.demon.co.uk/Unix/LibDsk/
 Source: http://www.seasip.demon.co.uk/Unix/LibDsk/%{name}-%{version}.tar.bz2
 Group: System/Libraries
 BuildRequires: libz-devel bzip2-devel
-BuildRoot: %{_tmppath}/%{name}-%{version}-root
 
 %description
 LibDsk is a library intended to give transparent access to floppy drives and
