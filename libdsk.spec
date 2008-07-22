@@ -1,6 +1,6 @@
 %define name    libdsk
 %define version 1.1.14
-%define release %mkrel 1
+%define release %mkrel 3
 
 %define major 3
 
