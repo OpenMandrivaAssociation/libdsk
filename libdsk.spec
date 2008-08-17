@@ -1,6 +1,6 @@
 %define name    libdsk
-%define version 1.1.14
-%define release %mkrel 3
+%define version 1.2.1
+%define release %mkrel 1
 
 %define major 3
 
@@ -14,7 +14,7 @@ Version: %{version}
 Release: %{release}
 License: GPL
 URL: http://www.seasip.demon.co.uk/Unix/LibDsk/
-Source: http://www.seasip.demon.co.uk/Unix/LibDsk/%{name}-%{version}.tar.bz2
+Source: http://www.seasip.demon.co.uk/Unix/LibDsk/%{name}-%{version}.tar.gz
 Group: System/Libraries
 BuildRequires: libz-devel bzip2-devel
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
