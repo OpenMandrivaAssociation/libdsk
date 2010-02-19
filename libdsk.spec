@@ -85,11 +85,12 @@ files. You'll also need to install the libdsk package.
 %setup -q
 
 %build
-%configure
+%configure2_5x
 %make
 
 %install
-%makeinstall
+rm -fr %buildroot
+%makeinstall_std
 
 %clean
 rm -rf %{buildroot}
