@@ -7,7 +7,7 @@
 Name:		libdsk
 Summary:	A library for accessing floppy drives and disk images transparently
 Version:	1.2.1
-Release:	4
+Release:	5
 License:	GPL
 Group:		System/Libraries
 URL:		http://www.seasip.demon.co.uk/Unix/LibDsk/
