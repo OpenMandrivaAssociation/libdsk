@@ -6,7 +6,7 @@
 
 Name:		libdsk
 Summary:	A library for accessing floppy drives and disk images transparently
-Version:	1.2.1
+Version:	1.3.8
 Release:	5
 License:	GPL
 Group:		System/Libraries
