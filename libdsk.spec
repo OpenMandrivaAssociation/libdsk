@@ -9,7 +9,7 @@ Version:	1.3.8
 Release:	6
 License:	GPL
 Group:		System/Libraries
-URL:		http://www.seasip.demon.co.uk/Unix/LibDsk/
+URL:		https://www.seasip.demon.co.uk/Unix/LibDsk/
 Source:		http://www.seasip.demon.co.uk/Unix/LibDsk/%{name}-%{version}.tar.gz
 BuildRequires:	bzip2-devel
 BuildRequires:	pkgconfig(zlib)
